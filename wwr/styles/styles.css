@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
+
 body {
     background-color: #fcfbfb;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -10,6 +16,7 @@ nav a {
     text-align: center;
     color: #FFFFFF;
     text-decoration: none;
+    padding: 35px;
 }
 
 nav a:hover {
@@ -21,6 +28,14 @@ main section {
     text-align: center;
 }
 
+main section img {
+    box-sizing: border-box;
+}
+
+h2 {
+    margin: 0;
+}
+
 h4 {
     color: #F8961E;
 }
@@ -28,6 +43,8 @@ h4 {
 footer {
     background-color: #43AA8B;
     color: #000000;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer p {
@@ -47,18 +64,27 @@ footer a:hover {
     color: #FFFFFF;
 }
 
+footer .social img {
+    padding-top: 15px;
+}
+
 .logo {
     width: 80px;
 }
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 .book, .join {
     background-color: #43AA8B;
     color: #FFFFFF;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
@@ -68,10 +94,9 @@ footer a:hover {
 
 .home-title {
     color: #F8961E;
-}
-
-.book:hover, .join:hover {
-    background-color: #277DA1;
+    font-family: "Lora", "Georgia", serif;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 .button-box {
@@ -80,14 +105,27 @@ footer a:hover {
 
 .msg {
     background-color: #277DA1;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 .msg h2 {
     color: #F8961E;
+    font-family: "Lora", "Georgia", serif;
 }
 
 .msg p {
     color: white;
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid #43AA8B;
 }
 
 #hero-msg h1, #hero-msg h4{
@@ -106,4 +144,8 @@ footer a:hover {
 #background {
     height: 725px;
     background-color: #277DA1;
+}
+
+#logo_link {
+    padding-top: 5px;
 }
