@@ -177,6 +177,21 @@ footer .social img {
     box-shadow: 5px 5px 10px #0E2C39;
 }
 
+.faq-container {
+    background-color: #d17b0f;
+    margin-top: 200px;
+    padding: 35px;
+}
+
+.qna {
+    text-align: left;
+}
+
+.ans {
+    padding-left: 20px;
+    font-size: .8em;
+}
+
 #hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
