@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Motion Picture | Home</title>
+    <title>History of the First Motion Picture | Home</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <header>
-        <a id="logo" href="index.html">
-            <img src="images/ff_logo_gld.jpeg" alt="First Film Logo">
+        <a id="logo-link" href="index.html">
+            <img src="images/ff_logo_trans.png" alt="First Film Logo">
         </a>
         <nav>
             <a href="index.html">Home</a>
@@ -19,27 +20,32 @@
     </header>
     <main>
         <section id="hero">
-            <img src="images/camera-obscura-drawing.jpg" alt="Camera Obscura">
-            <h1>First Motion Picture</h1>
+            <img src="images/camera_obscura.jpg" alt="Camera Obscura Illustration">
+            <h1>History of the First Motion Picture</h1>
         </section>
-        <div id="home-containter">
-            <section>
+        <div id="home-container">
+            <div id="passage">
                 <img src="images/zoopraxiscope.jpg" alt="Zoopraxiscope">
                 <p>The history of motion pictures dates back to the late 19th century, with the earliest experiments in moving images taking place in the 1870s and 1880s. While there is some debate among film historians about which specific film should be considered the first motion picture, there are several early films that played an important role in the development of cinema. We will show two of them.</p>
-            </section>
-            <section>
-                <img src="images/the_horse_in_motion_animation.jpg" alt="Horse in Motion Thumbnail">
-                <h2>Horse in Motion</h2>
-            </section>
-            <section>
-                <img src="images/roundhay_garden_scene.jpg" alt="Roundhay Garden Scene">
-                <h2>Roundhay Garden Scene</h2>
-            </section>
+            </div>
+            <div id="subpage-container">
+                <a class="subpage-link" href="horse.html">
+                    <img src="images/horse.jpg" alt="The Horse in Motion">
+                    <h2>Horse in Motion</h2>
+                </a>
+                <a class="subpage-link" href="garden.html">
+                    <img src="images/garden.jpg" alt="Roundhay Garden Scene">
+                    <h2>Roundhay Garden Scene</h2>
+                </a>
+            </div>
         </div>
     </main>
     <footer>
-        <p>Copyright © 2023 Holden Leung</p>
-        <a href="site-plan.html">Site Plan</a>
+        <hr>
+        <div id="footer-container">
+            <p>Copyright © 2023 Holden Leung</p>
+            <p id="footer-link"><a href="site-plan.html">Site Plan</a></p>
+        </div>
     </footer>
 </body>
 </html>

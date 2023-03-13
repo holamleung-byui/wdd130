@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Merriweather+Sans');
+
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #c0a742   ;
+    --secondary-color: #603140 ;
+    --accent1-color: #AEA4BF;
+    --accent2-color: #25291C;
+
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Playfair Display", serif;
+    --paragraph-font: "Merriweather", Helvetica, sans-serif;
+
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #25291C;  /* headlines on a white background */ 
+    --headline-color-on-color: #ffffff; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #000000; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: #ffffff; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #c0a742  ;
+    --nav-link-color: #ffffff;
+    --nav-background-color: #c0a742;
+    --nav-hover-link-color: #AEA4BF;
+    --nav-hover-background-color: #603140;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    margin: 0;
+    background-color: #1f1f1f;
+    color: var(--paragraph-color-on-color);
+}
+
+header {
+    margin: 0;
+    background-color: #c0a742;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-link {
+    margin: 0 50px;
+    width: 75px;
+    height: 75px;
+    overflow: hidden;
+}
+
+#logo-link img {
+    width: 115px;
+    object-fit: cover;
+    object-position: -18px -18px;
+}
+
+nav {
+    width: 50%;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    margin: 0;
+    padding: 25px;
+    font-size: 20px;
+    color: var(--nav-link-color);
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--nav-hover-background-color);
+}
+
+#hero {
+    display: grid;
+    position: relative;
+}
+
+#hero img {
+    width: 100%;
+    object-fit: cover;
+    margin-top: -300px;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+#hero h1 {
+    position: absolute;
+    font-size: 42pt;
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-color);
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+}
+
+#home-container {
+    width: 75%; 
+    margin: 250px auto;
+}
+
+#passage {
+    display: flex;
+    align-items: center;
+    gap: 100px; 
+}
+
+#passage img {
+    width: 480px;
+}
+
+#passage p {
+    font-size: 18pt;
+}
+
+#subpage-container {
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.subpage-link {
+    position: relative;
+}
+
+.subpage-link h2{
+    position: absolute;
+    margin: 0 auto; 
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 40%;
+    background: rgba(0, 0, 0, 0.8);
+    color: var(--nav-link-color);
+    width: 60%;
+}
+
+.subpage-link:hover h2{
+    color: var(--nav-hover-link-color);
+}
+
+.subpage-link img {
+    width: 360px;
+    height: 360px;
+    object-fit: cover;
+    border: 5px solid var(--primary-color);
+}
+
+.subpage-link:hover img{
+    opacity: .6;
+    transform: scale(1.1);
+    border: 5px solid var(--secondary-color);
+}
+
+footer{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#footer-container {
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
+footer a {
+    color: var(--paragraph-color-on-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--nav-hover-link-color);
+}
