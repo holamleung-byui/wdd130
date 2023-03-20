@@ -78,20 +78,27 @@ nav a:hover {
 #hero img {
     width: 100%;
     object-fit: cover;
-    margin-top: -300px;
+    margin-top: -200px;
     opacity: 0.8;
     z-index: -1;
 }
 
+#hero-video {
+    margin: 0 auto;
+    min-width: 960px;
+}
+
 #hero h1 {
     position: absolute;
-    font-size: 42pt;
+    padding: 10px;
+    font-size: 36pt;
     font-family: var(--heading-font);
     color: var(--headline-color-on-color);
+    background: rgba(0, 0, 0, 0.5); 
     text-align: center;
     top: 40%;
     left: 50%;
-    transform: translate(-50%, -60%);
+    transform: translate(-50%, -50%);
 }
 
 #home-container {
